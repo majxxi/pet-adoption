@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %} LIST of PETS {% endblock %}
+
+{% block content %}
+  {% for pet in pets %}
+    <p>{{ pet.name }}</p>
+
+  {% endfor %}
+{% endblock %}
